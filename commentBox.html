@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>Comment Box</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <link href="commentBox.css" rel="StyleSheet">
+        <script src="controller.js"></script>
+    </head>
+    <body>
+        <div id='container'>
+            <form ng-controller="FormController">
+                <h2>{{ appDetails.title }}</h2>
+                <form ng-controller="FormController">
+
+                    <!--This is where the comment message goes-->
+                    <textarea ng-model="txtcomment" placeholder="{{ appDetails.placeholder }}" style='width:550px'></textarea>
+
+                    <!--Button to add in comments-->
+                    <button ng-click='btn_add();' style='margin-top:10px;'>{{ appDetails.btnText }}</button>
+
+                    <!--Comment Label-->
+                    <h4>{{appDetails.label}}</h4>
+                    <hr>
+                    <!--Holds all comments-->
+                    <ul>
+                        <li id="comment" ng-repeat="comnt in comment"> {{ comnt }} <a  style="float: right;" href="" ng-click="removeItem($index)"><strong>{{ appDetails.delete }}</strong></a></li>
+                    </ul>
+                </form>
+        </div>
+
+    </body>
+</html>

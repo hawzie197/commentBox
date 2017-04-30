@@ -1,0 +1,51 @@
+#container {
+   border:1px solid #DBDCE9;
+   margin-left:auto;
+   margin-right:auto;
+   width:550px;
+   border-radius:7px;
+   padding: 25px;
+ }
+
+ textarea {
+   text-decoration: none;
+   border-radius: 4px;
+   font-size: 15px;
+ }
+
+ button {
+   background-color: transparent;
+   border: solid 1px #000;
+   border-radius: 4px;
+   width: 110px;
+   height: 22px;
+
+ }
+
+div {
+  width: 200px;
+}
+
+h2 {
+  font: Helvetica;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;padding: 0;
+}
+
+#comment {
+  font: Helvetica;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+
+li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
